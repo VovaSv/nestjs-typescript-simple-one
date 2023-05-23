@@ -14,9 +14,9 @@ import { getMongoConfig } from './configs/mongo.config';
   imports: [
     ConfigModule.forRoot(), // Without passing nothing the ConfigModule will auto use .env file from root
     // ConfigModule.forRoot({ isGlobal: true }) -> to remove import in top-page.module
-    //MongooseModule.forRoot(
-    //  'mongodb+srv://vovasvidi:OxUzvm6arepupnpo@cluster69.0nfk51j.mongodb.net/?retryWrites=true&w=majority&//////ssl=true',
-    //),
+    /*MongooseModule.forRoot(
+      'mongodb+srv://vovasvidi:OxUzvm6arepupnpo@cluster69.0nfk51j.mongodb.net/?retryWrites=true&w=majority&ssl=true',
+    ),*/
     TypegooseModule.forRootAsync({
       imports: [ConfigModule],
       inject: [ConfigService],

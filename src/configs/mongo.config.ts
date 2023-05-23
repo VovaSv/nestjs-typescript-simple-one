@@ -11,6 +11,8 @@ export const getMongoConfig = async (
 };
 
 const getMongoString = (configService: ConfigService) =>
+  'mongodb+srv://vovasvidi:OxUzvm6arepupnpo@cluster69.0nfk51j.mongodb.net/?retryWrites=true&w=majority&ssl=true';
+/*
   'mongodb+srv://' +
   configService.get('MONGO_LOGIN') +
   ':' +
@@ -21,5 +23,5 @@ const getMongoString = (configService: ConfigService) =>
   configService.get('MONGO_DB_NAME') +
   '?' +
   configService.get('MONGO_DB_CONNECT_PROPERTY');
-
+*/
 // const getMongoOptions = () => ({});
