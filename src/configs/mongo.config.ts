@@ -6,7 +6,7 @@ export const getMongoConfig = async (
 ): Promise<TypegooseModuleOptions> => {
   return {
     uri: getMongoString(configService),
-    ...getMongoOptions(),
+    // ...getMongoOptions(),
   };
 };
 
@@ -20,6 +20,6 @@ const getMongoString = (configService: ConfigService) =>
   '/' +
   configService.get('MONGO_DB_NAME') +
   '?' +
-  configService.get('MONGO_DB_CONNECT_CONFIG');
+  configService.get('MONGO_DB_CONNECT_PROPERTY');
 
-const getMongoOptions = () => ({});
+// const getMongoOptions = () => ({});
